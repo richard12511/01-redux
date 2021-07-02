@@ -1,6 +1,6 @@
 import classes from './Header.module.css';
 
-const Header = () => {
+const Header = ({ logout }) => {
   return (
     <header className={classes.header}>
       <h1>Redux Auth</h1>
@@ -13,7 +13,7 @@ const Header = () => {
             <a href='/'>My Sales</a>
           </li>
           <li>
-            <button>Logout</button>
+            <button onClick={logout}>Logout</button>
           </li>
         </ul>
       </nav>
