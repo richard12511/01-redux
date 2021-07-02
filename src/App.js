@@ -9,7 +9,6 @@ import { authActions } from './store';
 function App() {
   const dispatch = useDispatch();
   const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
-  // const [isAuthenticated, setIsAuthenticated]
 
   const loginHandler = () => {
     dispatch(authActions.login());
